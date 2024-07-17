@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="app.css">
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Quiz Game</title>
+    
+</head>
+<body>
+    
+<div class="container">
+        <h1>Advanced Quiz Game</h1>
+        <div id="start">
+            <h2>Select Difficulty</h2>
+            <button onclick="start('easy')">Easy</button>
+            <button onclick="start('medium')">Medium</button>
+            <button onclick="start('hard')">Hard</button>
+        </div>
+        <div id="quiz" style="display: none;">
+           
+            <div id="nb">Remaining Questions: 
+                <span id="RemainingQuestion"></span> seconds
+            </div>
+            <div id="question-container">
+                 <h2 id="question">Question</h2>
+                <div id="options">
+                    <button class="option" onclick="select(this)">Option 1</button>
+                    <button class="option" onclick="select(this)">Option 2</button>
+                    <button class="option" onclick="select(this)">Option 3</button>
+                    <button class="option" onclick="select(this)">Option 4</button>
+                </div>
+            </div>
+             <div id="timer">Time Left: 
+                <span id="timeLeft">50</span> seconds
+            </div>
+            <button id="next"style="display: none;" onclick="next()" >Next</button>
+        </div>
+        <div style="display: none;" id="result" >
+            <span id="score"></span>
+            <button onclick="restart()">Restart </button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
